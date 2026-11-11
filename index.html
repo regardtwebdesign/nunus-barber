@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nunus Barber — Haircuts &amp; Beard Care in Krugersdorp</title>
   <meta name="description" content="Nunus Barber, Heritage Square, Krugersdorp North. Haircuts, beard trims and beard maintenance. Rated 4.9 by our clients." />
+  <meta property="og:title" content="Nunus Barber — Krugersdorp" />
+  <meta property="og:description" content="Haircuts, beard trims and beard maintenance in Heritage Square, Krugersdorp North." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
@@ -39,13 +43,11 @@
     .mono { filter: grayscale(1) contrast(0.95) brightness(1.02); }
     .center { text-align: center; }
 
-    /* Logo */
     .logo { display: flex; align-items: center; gap: 0.75rem; }
     .logo svg { width: 40px; height: 40px; }
     .logo span { font-size: 1.5rem; font-weight: 300; letter-spacing: 0.18em; }
     .logo span small { font-size: inherit; margin-left: 0.25rem; font-weight: 200; letter-spacing: 0.08em; opacity: 0.8; }
 
-    /* Buttons */
     .btn { display: inline-block; padding: 1rem 2rem; transition: background 0.3s, color 0.3s, opacity 0.3s; }
     .btn-outline { border: 1px solid rgba(252, 252, 252, 0.8); }
     .btn-outline:hover { background: var(--slate-foreground); color: var(--slate); }
@@ -53,7 +55,6 @@
     .btn-plain:hover { opacity: 0.7; }
     .btn-sm { padding: 0.875rem 1.75rem; }
 
-    /* Hero */
     .hero { position: relative; min-height: 100svh; display: flex; align-items: center; justify-content: center; overflow: hidden; }
     .hero > img, .cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
     .overlay { position: absolute; inset: 0; background: var(--overlay); }
@@ -62,7 +63,6 @@
     .hero-buttons { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
     @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
 
-    /* About */
     .about { max-width: 42rem; margin: 0 auto; padding: 6rem 1.5rem; text-align: center; }
     .about p.body-copy { margin-top: 2rem; color: var(--muted); }
     .rating { margin-top: 3rem; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; }
@@ -70,7 +70,6 @@
     .stars svg { width: 16px; height: 16px; fill: currentColor; }
     .rating p { color: var(--muted); }
 
-    /* Cards */
     .cards-section { padding: 0 1rem 6rem; }
     .grid { max-width: 72rem; margin: 3rem auto 0; display: grid; gap: 1rem; }
     .card { background: var(--slate); color: var(--slate-foreground); padding: 4rem 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
@@ -80,12 +79,10 @@
     .card > a { margin-top: 2.5rem; font-weight: 600; transition: opacity 0.3s; }
     .card > a:hover, .visit-item a:hover { opacity: 0.7; }
 
-    /* Image break */
     .break { position: relative; height: 55vh; min-height: 320px; overflow: hidden; }
     .break .overlay { display: flex; align-items: center; justify-content: center; padding: 0 1.5rem; }
     .break p { max-width: 36rem; text-align: center; font-size: 1.5rem; font-weight: 200; line-height: 1.6; letter-spacing: 0.025em; color: var(--slate-foreground); }
 
-    /* Craft */
     .craft { max-width: 72rem; margin: 0 auto; padding: 6rem 1.5rem; display: grid; gap: 3rem; align-items: center; }
     .craft img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; }
     .craft-text { text-align: center; }
@@ -93,7 +90,6 @@
     .craft-text h2 { margin-top: 1rem; }
     .craft-text p.body-copy { margin-top: 2rem; color: var(--muted); }
 
-    /* Visit */
     .visit-card { justify-content: center; gap: 2.5rem; }
     .visit-item { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
     .visit-item svg { width: 24px; height: 24px; }
@@ -101,7 +97,6 @@
     .visit-buttons { display: flex; flex-direction: column; gap: 0.75rem; }
     .map { width: 100%; height: 420px; border: 0; }
 
-    /* Footer */
     footer { background: var(--slate); color: var(--slate-foreground); padding: 5rem 1.5rem 3rem; }
     .footer-grid { max-width: 72rem; margin: 0 auto; display: grid; gap: 3.5rem; text-align: center; }
     .footer-brand { display: flex; flex-direction: column; align-items: center; }
@@ -115,7 +110,6 @@
     .contact svg { width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; }
     .copyright { max-width: 72rem; margin: 4rem auto 0; padding-top: 2rem; border-top: 1px solid var(--slate-line); text-align: center; font-size: 0.75rem; letter-spacing: 0.05em; color: var(--slate-muted); }
 
-    /* Back to top */
     .to-top { position: fixed; right: 1.25rem; bottom: 1.25rem; z-index: 50; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: var(--ink); color: #fcfcfc; border: 0; cursor: pointer; opacity: 0; transform: translateY(12px); pointer-events: none; transition: all 0.5s; }
     .to-top.show { opacity: 1; transform: none; pointer-events: auto; }
     .to-top svg { width: 20px; height: 20px; }
@@ -137,17 +131,16 @@
   </style>
 </head>
 <body>
-  <!-- Shared star shape, used by the rating row and the Beard Maintenance card -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="star" viewBox="0 0 24 24">
-      <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+      <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.010a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.160z" />
     </symbol>
   </svg>
 
   <main>
     <!-- Hero -->
     <section class="hero">
-      <img class="mono" src="images/hero-barbershop.jpg" alt="Nunus Barber shop interior with a classic barber chair" width="1600" height="1072" />
+      <img class="mono" src="https://images.pexels.com/photos/13138476/pexels-photo-13138476.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Barber shop interior with leather barber chairs" width="1600" height="1072" />
       <div class="overlay"></div>
       <div class="hero-content">
         <div class="logo">
@@ -214,7 +207,7 @@
 
     <!-- Image break -->
     <section class="break">
-      <img class="cover mono" src="images/barber-tools.jpg" alt="Straight razor, comb, scissors and shaving brush" width="1600" height="912" loading="lazy" />
+      <img class="cover mono" src="https://images.pexels.com/photos/7697711/pexels-photo-7697711.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Straight razor, comb, scissors and shaving brush" width="1600" height="912" loading="lazy" />
       <div class="overlay">
         <p>Sharp lines. Steady hands. A cut you can trust.</p>
       </div>
@@ -222,7 +215,7 @@
 
     <!-- Craft -->
     <section class="craft">
-      <img class="mono" src="images/beard-trim.jpg" alt="Barber trimming a client's beard with scissors" width="1200" height="1200" loading="lazy" />
+      <img class="mono" src="https://images.pexels.com/photos/19287849/pexels-photo-19287849.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1200" alt="Barber shaping a client's beard with a straight razor" width="1200" height="1200" loading="lazy" />
       <div class="craft-text">
         <p class="eyebrow">The Craft</p>
         <h2 class="section-title">Beard care, done properly</h2>
